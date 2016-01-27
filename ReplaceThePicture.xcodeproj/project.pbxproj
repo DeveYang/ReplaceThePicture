@@ -15,6 +15,8 @@
 		183D04EC1C5602650086A193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183D04EA1C5602650086A193 /* LaunchScreen.storyboard */; };
 		183D04F71C5602660086A193 /* ReplaceThePictureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D04F61C5602660086A193 /* ReplaceThePictureTests.m */; };
 		183D05021C5602660086A193 /* ReplaceThePictureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D05011C5602660086A193 /* ReplaceThePictureUITests.m */; };
+		183D05121C5605B70086A193 /* ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D05111C5605B70086A193 /* ImagePicker.m */; };
+		183D05141C5609680086A193 /* Head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 183D05131C5609680086A193 /* Head.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		183D04FD1C5602660086A193 /* ReplaceThePictureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReplaceThePictureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		183D05011C5602660086A193 /* ReplaceThePictureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplaceThePictureUITests.m; sourceTree = "<group>"; };
 		183D05031C5602660086A193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183D05101C5605B70086A193 /* ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePicker.h; sourceTree = "<group>"; };
+		183D05111C5605B70086A193 /* ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePicker.m; sourceTree = "<group>"; };
+		183D05131C5609680086A193 /* Head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Head.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +106,14 @@
 		183D04DB1C5602650086A193 /* ReplaceThePicture */ = {
 			isa = PBXGroup;
 			children = (
+				183D050F1C5605790086A193 /* ChangeImageClass */,
 				183D04DF1C5602650086A193 /* AppDelegate.h */,
 				183D04E01C5602650086A193 /* AppDelegate.m */,
 				183D04E21C5602650086A193 /* ViewController.h */,
 				183D04E31C5602650086A193 /* ViewController.m */,
 				183D04E51C5602650086A193 /* Main.storyboard */,
 				183D04E81C5602650086A193 /* Assets.xcassets */,
+				183D05131C5609680086A193 /* Head.jpg */,
 				183D04EA1C5602650086A193 /* LaunchScreen.storyboard */,
 				183D04ED1C5602650086A193 /* Info.plist */,
 				183D04DC1C5602650086A193 /* Supporting Files */,
@@ -138,6 +145,15 @@
 				183D05031C5602660086A193 /* Info.plist */,
 			);
 			path = ReplaceThePictureUITests;
+			sourceTree = "<group>";
+		};
+		183D050F1C5605790086A193 /* ChangeImageClass */ = {
+			isa = PBXGroup;
+			children = (
+				183D05101C5605B70086A193 /* ImagePicker.h */,
+				183D05111C5605B70086A193 /* ImagePicker.m */,
+			);
+			path = ChangeImageClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				183D04EC1C5602650086A193 /* LaunchScreen.storyboard in Resources */,
+				183D05141C5609680086A193 /* Head.jpg in Resources */,
 				183D04E91C5602650086A193 /* Assets.xcassets in Resources */,
 				183D04E71C5602650086A193 /* Main.storyboard in Resources */,
 			);
@@ -271,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				183D04E41C5602650086A193 /* ViewController.m in Sources */,
+				183D05121C5605B70086A193 /* ImagePicker.m in Sources */,
 				183D04E11C5602650086A193 /* AppDelegate.m in Sources */,
 				183D04DE1C5602650086A193 /* main.m in Sources */,
 			);
@@ -412,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReplaceThePicture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DeveYang.ReplaceThePicture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReplaceThePicture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DeveYang.ReplaceThePicture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
